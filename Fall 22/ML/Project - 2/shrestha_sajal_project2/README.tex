@@ -1,0 +1,64 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\begin{document}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{Full Name: Sajal Shrestha}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{CS622 ML Project-2}
+\begin{questions}
+
+\question\textbf{ Using the following training data provided in nearest neighbors 1.csv, how would your algorithm classify the test points listed below with K=1, K=3, and K=5?}
+\par\normalfont 
+\begin{tabular}{ |p{3cm}||p{2cm}|p{2cm}|p{2cm}|  }
+ \hline
+ Tests& K=1 &K=3&K=5\\
+ \hline
+    test1 =(1,1,1)& 1& 1& 1\\
+    test2 =(2,1,{-1})& -1& 1& 1\\
+    test3 =(0,10,1)& 1& 1&  1\\
+    test4 =(10,10,{-1})& -1& -1& -1\\
+    test5 =(5,5,1)& 1& -1& 1\\
+    test6 =(3,10,{-1})& -1& 1& -1\\
+    test7 =(9,4,1)& 1& -1& -1 \\
+    test8 =(6,2,{-1})& -1& 1& 1\\
+    test9 =(2,2,1)& 1& 1& 1\\
+    test10 =(8,7,{-1})& -1& 1& -1\\
+ \hline
+\end{tabular}
+\vspace{\stretch{0.002}}
+
+\question\textbf{What is the best K value for the training data above?}
+\par\normalfont 
+- When K=1.
+\vspace{\stretch{0.0015}}
+
+\question\textbf{Test your function on the following training data provided in clustering 2.csv, with K=2 and K=3. What changes do you notice when updating the k value?}
+\par\normalfont 
+- Whether K=2 or 3 in clustering{-}2.csv, the KMeans remains the same if the 'mu' array structure is not changed. \break 
+For example, \hfill\break 
+when K=2 or/and K=3 and mu = [[1,2],[5,2]] then, KMeans:  [[2.3 2.9] [8.  4.8]]\hfill \break 
+when k=2 and mu = [[1,2],[5,2]] then, KMeans:  [[2.3 2.9] [8.  4.8]]\hfill \break when k=3 and mu = [[1,2],[5,2], [2,3]] then, KMeans:  [[2.28571429 1.28571429] [9.14285714 3.71428571] [3.83333333 7.]] \hfill \break 
+ \vspace{\stretch{0.02}}
+
+\question\textbf{Test your function with K=2 and K=3 on the above data. Plot your clusters in different colors and label the cluster centers.}
+\par\normalfont 
+\begin{wrapfigure}
+    \centering
+    \includegraphics[width=10cm]{cluster.png}
+\end{wrapfigure}
+\vspace{\stretch{0.02}}
+
+\question\textbf{Train your perceptron on the following dataset provided in perceptron 2.csv. Using the w and b you get, plot the decision boundary.}
+\par\normalfont 
+\begin{wrapfigure}
+    \centering
+    \includegraphics[width=10cm]{perceptron.png}
+\end{wrapfigure}
+\vspace{\stretch{0.5}}
+
+\end{questions}
+\clearpage
+\end{document}

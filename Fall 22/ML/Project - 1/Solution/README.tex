@@ -1,0 +1,40 @@
+\documentclass{exam}
+
+\begin{document}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{Full Name: Sajal Shrestha}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{CS622 ML Project-1}
+\begin{questions}
+
+\question\textbf{ Did you implement your decision tree functions iteratively or recursively? Which data structure did you choose and were you happy with that choice? If you were unhappy with that choice which other data structure would have built the model with?}
+\par\normalfont 
+- Recursively. I have used a nested dictionary with 2 parameters "positionOfX" and "divide". Yes, I was happy with my choice of this structure made the trees more comprehensive.
+\vspace{\stretch{0.02}}
+
+\question\textbf{Why might the individual trees have such variance in their accuracy? How would you reduce this variance and potentially improve accuracy?}
+\par\normalfont 
+- The accuracy of the trees depends on the maximum depth of the tree and the data used. With respect to the problem, the given maximum depth was only 3 and each tree’s training data was built from a random sampling of 10\% of the total data.
+\vspace{\stretch{0.02}}
+
+\question\textbf{Why might the individual trees have such variance in their accuracy? How would you reduce this variance and potentially improve accuracy?}
+\par\normalfont 
+- The accuracy of the trees depends on the maximum depth of the tree and the data used. With respect to the problem, the given maximum depth was only 3 and each tree’s training data was built from a random sampling of 10\% of the total data.
+\hfill \break We can improve the accuracy by increasing the maximum depth of the tree and also by increasing the percentage of random sampling.  
+\vspace{\stretch{0.02}}
+
+\question\textbf{Why is it beneficial for the random forest to use an odd number of individual trees?}
+\par\normalfont 
+- Because when the number of trees is even there is a chance to have a tie result. 
+\vspace{\stretch{0.02}}
+
+\question\textbf{Overall, if you are still feeling uncomfortable working with python, what aspect of the coding language do you feel you are struggling with the most? If you do feel comfortable, what part of python do you feel you should continue practicing?}
+\par\normalfont 
+- I studied Python programming during my undergrad back in 2015 and since then I have never used Python before. However, I had a lot of experience with other languages so, I didn't feel the discomfort as I thought I would. But, I had a little bit of trouble trying to understand the short-hand syntax like List comprehension. 
+\vspace{\stretch{0.5}}
+
+\end{questions}
+\clearpage
+\end{document}

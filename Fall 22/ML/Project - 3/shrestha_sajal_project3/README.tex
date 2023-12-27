@@ -1,0 +1,30 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\begin{document}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{Full Name: Sajal Shrestha}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{CS622 ML Project-3}
+\begin{questions}
+
+\question\textbf{What is the reason for using a decision tree stump rather than a decision tree with a greater depth?}
+\par\normalfont 
+- Decision stumps optimizes linear classifiers which is much more
+effective than using a larger depth decision tree that will hold its non-linear structure. 
+\vspace{\stretch{0.002}}
+\question\textbf{How does this differentiate adaboost from a random forest ensemble method?}
+\par\normalfont 
+- Random forests depend on the probablities produced by running
+several times on different data. So random forests queries randomly on good and bad features where as adaboost stumps hone in on samples and features with miss classifications. And we setup weights to the samples in adaboost so it focuses more on the samples which have poor prediction.
+\vspace{\stretch{0.002}}
+\question\textbf{What would need to change to run an adaboost algorithm with a perceptron rather than a decision tree?}
+\par\normalfont 
+- Adaboost algorithm would look very similar but we would need to be ready to handle hard to converge data with an epoch limit paramter. Also, we would need to randomize our training data order so we don't take longer to reach our right answers. And, it would be good to have an initial weight variable for starting off our perceptrons.
+
+\vspace{\stretch{0.5}}
+\end{questions}
+\clearpage
+\end{document}

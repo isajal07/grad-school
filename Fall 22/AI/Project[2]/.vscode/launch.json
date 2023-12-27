@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: TestMountainCar",
+            "type": "python",
+            "request": "launch",
+            "program": "project-2-isajal07/car.py",
+            "args": "--test --model 'car.npy'",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: TrainMountainCar",
+            "type": "python",
+            "request": "launch",
+            "program": "project-2-isajal07/car.py",
+            "args": "--train",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: TestCartpole",
+            "type": "python",
+            "request": "launch",
+            "program": "project-2-isajal07/cart.py",
+            "args": "--test --model 'project-2-isajal07/cart.npy'",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: TrainCartpole",
+            "type": "python",
+            "request": "launch",
+            "program": "project-2-isajal07/cart.py",
+            "args": "--train",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },        {
+            "name": "Python: Test2Cartpole",
+            "type": "python",
+            "request": "launch",
+            "program": "project-2-isajal07/.test_cart.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },{
+            "name": "Python: Test2MountainCar",
+            "type": "python",
+            "request": "launch",
+            "program": "project-2-isajal07/.test_car.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
